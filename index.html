@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum dolores et delectus dolorem at corporis culpa repudiandae, ut fugiat autem accusamus cum distinctio, aliquam saepe. Aperiam, quidem tempore, soluta reiciendis, doloremque vero est suscipit maiores magnam corrupti ipsum fuga. Dolores beatae, quos modi voluptas, veniam suscipit quasi expedita mollitia eaque in facilis dignissimos molestiae neque? Quia dicta quas corrupti esse perspiciatis natus voluptate iste hic praesentium illum facere totam incidunt suscipit, accusamus alias voluptas, recusandae sed modi distinctio? Praesentium?</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe unde voluptates blanditiis perspiciatis, ut laudantium porro, totam modi voluptate at voluptatem, error dolorem ab architecto. Deserunt tenetur unde eum ullam?</div>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero harum dolores et delectus dolorem at corporis culpa repudiandae, ut fugiat autem accusamus cum distinctio, aliquam saepe. Aperiam, quidem tempore, soluta reiciendis, doloremque vero est suscipit maiores magnam corrupti ipsum fuga. Dolores beatae, quos modi voluptas, veniam suscipit quasi expedita mollitia eaque in facilis dignissimos molestiae neque? Quia dicta quas corrupti esse perspiciatis natus voluptate iste hic praesentium illum facere totam incidunt suscipit, accusamus alias voluptas, recusandae sed modi distinctio? Praesentium?</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe unde voluptates blanditiis perspiciatis, ut laudantium porro, totam modi voluptate at voluptatem, error dolorem ab architecto. Deserunt tenetur unde eum ullam?</div>
+    </div>
+</body>
+</html>
